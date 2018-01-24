@@ -29,7 +29,7 @@ def self.create_by_name(song_name)
 end
 
 def self.find_by_name(song_name)
-    @@all.each do |song|
+    @@all.detect do |song|
       if song_name == song
         return song
     end
