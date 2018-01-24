@@ -48,7 +48,8 @@ end
 
 def self.new_from_filename(mp3)
   rows = mp3.split(/\ - |\./)
-  data = array.split(", ")
+  songs = rows.collect do |row|
+  data = row.split(", ")
   artist = data[0]
   name = data[1]
 end
