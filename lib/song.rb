@@ -52,6 +52,10 @@ def self.new_from_filename(mp3)
   data = row.split(", ")
   artist = data[0]
   name = data[1]
+
+  song = self.new
+  song.name = name
+  song.artist_name = artist
 end
 end
 
