@@ -58,8 +58,14 @@ def self.new_from_filename(mp3)
 end
 
 def self.create_from_filename(mp3)
-  self.new_from_filename(mp3)
-  song.create
+  parts = mp3.split(/\ - |\./)
+  artist_name = parts[0]
+  song_name = parts[1]
+
+  song = self.create
+  song.name = song_name
+  song.artist_name = artist_name
+  song
 end
 
 end
