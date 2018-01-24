@@ -68,4 +68,8 @@ def self.create_from_filename(mp3)
   song
 end
 
+def self.destroy_all
+  self.class.all.clear
+end
+
 end
