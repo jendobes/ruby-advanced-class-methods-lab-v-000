@@ -53,5 +53,6 @@ def self.new_from_filename(mp3)
   artist = data[0]
   name = data[1]
 end
+end
 
 end
