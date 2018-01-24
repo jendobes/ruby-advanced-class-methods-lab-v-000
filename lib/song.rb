@@ -47,5 +47,5 @@ end
 def self.new_from_filename(mp3)
   mp3.split(/\ - |\./)
   artist = mp3[0]
-  song_name = mp3[1]
+  name = mp3[1]
 end
