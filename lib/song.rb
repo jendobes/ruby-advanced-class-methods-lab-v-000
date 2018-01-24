@@ -47,7 +47,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(mp3)
-  array = mp3.split(/\ - |\./)
+  rows = mp3.split(/\ - |\./)
   data = array.split(", ")
   artist = data[0]
   name = data[1]
