@@ -33,8 +33,7 @@ def self.find_by_name(song_name)
 end
 
 def self.find_or_create_by_name(song_name)
-    if self.find_or_create_by_name(song_name) == nil
-      self.create_by_name(song_name)
+  
   end
 end
 
