@@ -57,4 +57,9 @@ def self.new_from_filename(mp3)
   song
 end
 
+def self.create_by_name(mp3)
+  self.new_from_filename(mp3)
+  song.save
+end
+
 end
