@@ -53,3 +53,5 @@ def self.new_from_filename(mp3)
 end
 
 end
+
+binding.pry
