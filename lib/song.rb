@@ -32,6 +32,7 @@ def self.find_by_name(song_name)
     @@all.each do |song|
       if song_name == song
     end
+  end
 end
 
 
