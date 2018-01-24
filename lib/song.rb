@@ -35,7 +35,7 @@ end
 def self.find_or_create_by_name(song_name)
   if self.find_by_name(song_name) == nil
     self.create_by_name(song_name)
-  else 
+  else
     self.all.detect {|song| song.name == song_name}
   end
 end
